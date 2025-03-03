@@ -8,38 +8,36 @@
     <title>Document</title>
 
     <style>
-        .container .item {
-            background-color:pink;
+        .container .item{
+            background-color: teal;
         }
-        .main-container > .item {
-            background-color: pink;
+        .main-container .item{
+            background-color: cornsilk;
             padding: 10px;
         }
-        .button {
-            background-color: plum;
+        .button{
+            background-color: pink;
             border: 0;
             padding: 10px;
         }
-        .button.active {
-            background-color: palevioletred;
+        .button.active{
+            background-color: powderblue;
         }
-        .button.danger {
-            background-color: purple;
+        .button.danger{
+            background-color: cornflowerblue;
         }
-        .item1 + .item2 {
-            background-color: pink;
+        .item1 + .item2{
+            background-color: aquamarine;
         }
-        input[type=text] {
-            background-color: plum;
+        input[type=text]{
+            background-color: gainsboro;
             border: 1px solid black;
             height: 10px;
-
         }
-
     </style>
 </head>
 <body>
-    <!-- 1.item เป็นลูกของ container-->
+    <!--1.item เป็นลูกของ container-->
     <div class="container">
         Container
         <div class="item">
@@ -71,19 +69,19 @@
         </div>
     </div>
 
-    <!-- 3. มี class ติดกัน-->
-     <button class="button">ปุ่ม</button>
-     <button class="button button active">ปุ่ม</button>
-     <button class="button button danger">ปุ่ม</button>
+    <!--3.มี class ติดกัน-->
+    <button class="button">ปุ่ม</button>
+    <button class="button active">ปุ่ม</button>
+    <button class="button danger">ปุ่ม</button>
 
-     <!-- 4. เพื่อนกัน (adjacent)-->
-      <div class="item1">Item 1</div>
-      <div class="item2">Item 2</div>
+    <!--4.เพื่อน (adjacent)-->
+    <div class="item1"> Item 1</div>
+    <div class="item2"> Item 2</div>
 
-      <!-- 5. attribute selector-->
-       <input type="text" name="usrename">
-       <input type="text" name="password">
-       <input type="text" name="email">
+    <!--5. attributor-->
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="text" name="email">
 
 </body>
 </html>

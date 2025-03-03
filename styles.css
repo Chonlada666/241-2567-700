@@ -1,55 +1,59 @@
-@font-face{
-     font-family: Kanit;
-     src: url('./Kanit/Kanit-Regular.ttf');
- }
- body {
+/* ส่วนนี้คือ css */
+/* ใช้สำหรับแต่ง (id class) */
+@font-face {
+     font-family: 'Kanit';
+     src: url('./kanit/Kanit-Regular.ttf');
+}
+
+body {
      background-color: rgb(240, 255, 244);
-     font-family: "Kanit";
- }
- .container{
+     font-family: 'Kanit';
+}
+.container {
      width: 100%;
-     max-width: 640 px;
+     max-width: 640px;
      margin-left: auto;
      margin-right: auto;
      background-color: azure;
-     padding:  20px;
-     box-sizing:  border-box;
-    
- }
- .header{
+     padding: 20px;
+     box-sizing: border-box;
+}
+.header {
      font-size: 30px;
-     text-align:center;
+     text-align: center;
      margin-bottom: 20px;
- }
- .header-form{
+}
+.header-form {
      width: 170px;
- }
- .flex{
+}
+.flex {
      display: flex;
- }
- .form-input{
+}
+.form-input{
      margin-bottom: 10px;
- }
- input.form,textarea{
+}
+input.form, textarea{
      border: 1px solid gray;
      width: 100%;
- }
- .center{
+}
+.center{
      text-align: center;
- }
- .button{
+}
+.button{
      border: 0;
      width: 65%;
      height: 30px;
- }
- @media screen and  (max-width : 768px){
-     .flex{
-         flex-direction: column;
-     }
-     .header{
-         font-size: 24px;
-     }
-     .button{
-         width: 100%;
-     }
- }
+}
+
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+    .header {
+        font-size: 24px;
+    }
+    .button {
+        width: 100%;
+    }
+    
+}

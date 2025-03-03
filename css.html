@@ -2,32 +2,54 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
-    <meta charset=" "
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container {
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        /* Desktop */
+        .desktop ul {
             display: flex;
         }
-        .container.item {
-            padding: 10px;
-            flex: 1;
+        .desktop ul > li {
+            margin-right: 20px;
         }
-    </style>
-
+        .mobile-menu,
+        .mobile {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            .desktop {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .mobile-menu:hover + .mobile {
+                display: block;
+            } 
+        }
+     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="item">Item1</div>
-        <div class="item">Item2</div>
-    
+    <div class="desktop">
+        <ul>
+            <li>Homr</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     </div>
- 
+    <div class="mobile-menu">Menu</div>
+    <div class="mobile">
+        <ul>
+            <li>Homr</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
 </body>
 </html>
-
->>>>>>> 1ce9cb4089775918f50a49d1b3274aa17ecbaa75
