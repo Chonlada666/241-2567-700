@@ -1,63 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--ส่วนนี้ไม่แสดงออกไปที่หน้าจอ browser-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+
 
     <style>
-    @font-face {
-                font-family: 'Kanit';
-                src: url('./Kanit/Kanit-Regular.ttf');
-        }
-    body {
+        @font-face {
             font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
         }
 
-    .container {
-        width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: pink;
-        padding: 20px;
-    }
+        body {
+            font-family: 'Kanit';
+            background: linear-gradient(to right, #f5e6f48a, #edacfa8f)
+        }
 
-    .header {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .header-form {
-        width: 140px;
-    }
-    .flex {
-        display: flex;
-    }
-    .form-input {
-        margin-bottom: 10px;
-    }
-    input.form, textarea {
-        border: 1px solid #ccc;
-        height: 30px;
-    }
-    .center {
-        text-align: center;
-    }
-    .button {
-        border: 0;
-        width: 100%;
-        height: 40px;
-    }
+        .container {
+            border: 1px solid black;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(to right, #b6f8f8cb, #b3f8f23b);
+            border-radius: 20px;
+            margin-top: 150px;
+            padding: 50px;
 
+        }
 
+        .header {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header-form {
+            width: 140px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .form {
+            width: 500px;
+        }
+
+        .form-input {
+            margin-bottom: 10px;
+
+        }
+
+        input {
+            border-radius: 5px;
+        }
+
+        input.form {
+            border: 1px solid black;
+            height: 30px;
+        }
+
+        textarea {
+            width: 690px;
+            height: 100px;
+            border-radius: 5px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .button {
+            border-radius: 20px;
+            margin-top: 20px;
+            width: 30%;
+            height: 40px;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
-            Register form
+            Register Form
         </div>
         <div class="flex form-input">
             <div class="header-form">ชื่อ</div>
@@ -79,32 +109,33 @@
                 <input name="gender" type="radio">อื่นๆ
             </div>
         </div>
-    <div class="form-input">
-        <div class="header-form">งานอดิเรก</div>
-        <div>
-            <input name="interest" type="checkbox" value="อ่านหนังสือ">อ่านหนังสือ
-        </div>
-    
-        <div>
-            <input name="interest" type="checkbox" value="ดูหนัง">ดูหนัง
-        </div>
-        <div>
-            <input name="interest" type="checkbox" value="ฟังเพลง">ฟังเพลง
+        <div class="form-input">
+            <div class="header-form">งานอดิเรก</div>
+            <div>
+                <input name="interest" type="checkbox" value="อ่านหนังสือ">อ่านหนังสือ
+            </div>
+
+            <div>
+                <input name="interest" type="checkbox" value="ดูหนัง">ดูหนัง
+            </div>
+            <div>
+                <input name="interest" type="checkbox" value="ฟังเพลง">ฟังเพลง
+            </div>
         </div>
 
         <div class="form-input">
-            คำอธิบาย
+            <div>คำอธิบาย</div>
             <textarea></textarea>
         </div>
+
         <div class="center">
             <button class="button">ส่งข้อมูล</button>
         </div>
     </div>
-            
 
 </body>
-</html>
 
+</html>
 
 
     
