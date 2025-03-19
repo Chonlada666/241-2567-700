@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!--ส่วนนี้ไม่แสดงออกไปที่หน้าจอ Browser-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .button{
-            background-color: plum;
+        .button {
+            background-color: aquamarine;
             border: 0;
             padding: 10px;
         }
-        .button:hover{
-            background-color: aqua;
+
+        .button:hover {
+            background-color: darkorchid;
         }
-        .button:active{
-            background-color: aquamarine;
+        .button:active {
+            background-color: palevioletred;
         }
-        .button:focus{
-            background-color: cornflowerblue;
+        .button:focus {
+            background-color: blue;
         }
-        input:focus{
-            background-color: cornsilk;
+        input:focus {
+            background-color: cadetblue;  
         }
-        .container .item:first-child{
-            background-color: skyblue;
         
+        .container .item:first-child {
+            background-color: brown;
         }
-        .container .item:nth-child(2){
-            background-color: navajowhite;
-        
+
+        .container .item:nth-child(4) {
+            background-color: olivedrab;
         }
-        .container .item:last-child{
+
+        .container .item:last-child {
             background-color: lightcoral;
-        
         }
+
+
+
     </style>
 </head>
 <body>
-    <!--:hover =วาง active =คลิก focus = cursor-->
-    <input type="text">
-    <button class="button">Button</button>
-    
+     <!--:hover วาง active = คลิก focus = cursor-->
+         <input type="text">
+         <button class="button">Button</button>
+
     <div class="container">
         <div class="item">1</div>
         <div class="item">2</div>
@@ -50,5 +52,7 @@
         <div class="item">4</div>
         <div class="item">5</div>
     </div>
+
+    
 </body>
 </html>
