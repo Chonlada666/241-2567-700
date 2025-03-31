@@ -1,131 +1,98 @@
 @font-face {
-    font-family: "Kanit";
-    src: url("./Kanit/Kanit-Regular.ttf");
+    font-family: 'Kanit';
+    src: url('./Kanit/Kanit-Regular.ttf');
 }
 
 body {
-    font-family: "Kanit";
-    background: url("w4.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Kanit';
+    background: linear-gradient(to right, #f5e6f48a, #edacfa8f)
 }
 
 .container {
-    font-family: "Kanit";
-    width: 100%;
-    max-width: 600px;
-    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("w3.jpg");
-    background-size: cover;
-    padding:50px;
-    border-radius: 12px;
-    border-bottom: border-box;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border: 2px solid #A7C7E7;
-    color:white;
+    border: 1px solid black;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, #b6f8f8cb, #b3f8f23b);
+    border-radius: 20px;
+    margin-top: 150px;
+    padding: 50px;
+
 }
 
 .header {
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-    font-weight: bold;
-    color:rgb(255, 255, 255);
 }
+
 .header-form {
-    width: 110px;
+    width: 140px;
 }
+
 .flex {
-display: flex;
+    display: flex;
 }
+
+.form {
+    width: 500px;
+}
+
 .form-input {
     margin-bottom: 10px;
+
+}
+
+input {
+    border-radius: 5px;
+}
+
+input.form {
+    border: 1px solid black;
+    height: 30px;
+}
+
+textarea {
+    width: 690px;
+    height: 100px;
+    border-radius: 5px;
 }
 
 .center {
-text-align: center;
+    text-align: center;
 }
-input.form, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #A7C7E7;
-    border-radius: 6px;
-    font-size: 16px;
-    background:rgba(229, 192, 213, 0.85) ;
-    transition: 0.3s;
-}
-
-
-input.form, textarea {
-    border-color:rgb(214, 44, 177);
-    outline: none;
-    box-shadow: 0px 0px 5px rgba(211, 104, 166, 0.85);
-    border: 1px solid #ccc;
-    width:97%;
-
-}
-input.form:hover, textarea:hover{
-    background:rgb(253, 236, 247);
-    cursor: pointer;
-
-}
-
 
 .button {
-    padding: 12px;
-    background:rgb(84, 191, 218);
-    border: 1px;
-    color: white;
-    font-size: 18px;
-    border-radius: 6px;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 30%;
+    height: 40px;
     cursor: pointer;
-    transition: 0.3s;
-    width: 40%;
-    height: 50px;
-   
 }
-.button{
-    font-family: "Kanit";
-}
-
-
-
-.button:hover {
-    background:rgb(18, 221, 167);
-    transform: scale(1.1);
-}
-
 .message {
     margin-bottom: 20px;
-    display: none;
     padding: 10px;
-    border-radius: 6px;
+    background-color:lightgreen;
+    display: none;
 }
-
 .message.success {
-    display: block;
     background-color: lightgreen;
-}
-
-.message.danger {
     display: block;
+}
+.message.danger {
     background-color: red;
-    color: white;
+    display: block;
 }
 
 @media (max-width: 768px) {
-    
-    .container {
-        padding: 15px;
-    }
-    .header {
-        font-size: 24px;
-    }
-    .button {
-        font-size: 16px;
-    }
+.flex {
+    flex-direction: column;
+}
+.header {
+    font-size: 24px;
+}
+.button {
+    width: 100%;
+}
 }
