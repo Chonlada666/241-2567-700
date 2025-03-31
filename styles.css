@@ -1,59 +1,98 @@
-/* ส่วนนี้คือ css */
-/* ใช้สำหรับแต่ง (id class) */
 @font-face {
-     font-family: 'Kanit';
-     src: url('./kanit/Kanit-Regular.ttf');
+    font-family: 'Kanit';
+    src: url('./Kanit/Kanit-Regular.ttf');
 }
 
 body {
-     background-color: rgb(240, 255, 244);
-     font-family: 'Kanit';
-}
-.container {
-     width: 100%;
-     max-width: 640px;
-     margin-left: auto;
-     margin-right: auto;
-     background-color: azure;
-     padding: 20px;
-     box-sizing: border-box;
-}
-.header {
-     font-size: 30px;
-     text-align: center;
-     margin-bottom: 20px;
-}
-.header-form {
-     width: 170px;
-}
-.flex {
-     display: flex;
-}
-.form-input{
-     margin-bottom: 10px;
-}
-input.form, textarea{
-     border: 1px solid gray;
-     width: 100%;
-}
-.center{
-     text-align: center;
-}
-.button{
-     border: 0;
-     width: 65%;
-     height: 30px;
+    font-family: 'Kanit';
+    background: linear-gradient(to right, #f5e6f48a, #edacfa8f)
 }
 
-@media screen and (max-width: 768px) {
-    .flex {
-        flex-direction: column;
-    }
-    .header {
-        font-size: 24px;
-    }
-    .button {
-        width: 100%;
-    }
-    
+.container {
+    border: 1px solid black;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, #b6f8f8cb, #b3f8f23b);
+    border-radius: 20px;
+    margin-top: 150px;
+    padding: 50px;
+
+}
+
+.header {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-form {
+    width: 140px;
+}
+
+.flex {
+    display: flex;
+}
+
+.form {
+    width: 500px;
+}
+
+.form-input {
+    margin-bottom: 10px;
+
+}
+
+input {
+    border-radius: 5px;
+}
+
+input.form {
+    border: 1px solid black;
+    height: 30px;
+}
+
+textarea {
+    width: 690px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 30%;
+    height: 40px;
+    cursor: pointer;
+}
+.message {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color:lightgreen;
+    display: none;
+}
+.message.success {
+    background-color: lightgreen;
+    display: block;
+}
+.message.danger {
+    background-color: red;
+    display: block;
+}
+
+@media (max-width: 768px) {
+.flex {
+    flex-direction: column;
+}
+.header {
+    font-size: 24px;
+}
+.button {
+    width: 100%;
+}
 }
